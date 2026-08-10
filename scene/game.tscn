@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cy6a3stx8ntig"]
+
+[ext_resource type="PackedScene" uid="uid://b1y8po3jihy5a" path="res://Personagens e Itens/player.tscn" id="1_5kiuu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pcnrt"]
+size = Vector2(109.25, 29.90625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5kiuu"]
+size = Vector2(55.78125, 32.90625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dbls1"]
+size = Vector2(55.78125, 14.453125)
+
+[node name="Game" type="Node2D" unique_id=1780748388]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=899260432]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=766018345]
+position = Vector2(54.625, 196.95313)
+shape = SubResource("RectangleShape2D_pcnrt")
+debug_color = Color(0.13665724, 0.63731897, 0.32023084, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=63875229]
+position = Vector2(149.21875, 197)
+shape = SubResource("RectangleShape2D_5kiuu")
+debug_color = Color(0.13665724, 0.63731897, 0.32023084, 0.41960785)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1590310822]
+position = Vector2(222, 186)
+shape = SubResource("RectangleShape2D_5kiuu")
+debug_color = Color(0.13665724, 0.63731897, 0.32023084, 0.41960785)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1966516788]
+position = Vector2(284, 142)
+shape = SubResource("RectangleShape2D_dbls1")
+debug_color = Color(0.13665724, 0.63731897, 0.32023084, 0.41960785)
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1628923657]
+position = Vector2(339, 123)
+shape = SubResource("RectangleShape2D_dbls1")
+debug_color = Color(0.13665724, 0.63731897, 0.32023084, 0.41960785)
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" unique_id=2002932676]
+position = Vector2(392, 100)
+shape = SubResource("RectangleShape2D_dbls1")
+debug_color = Color(0.13665724, 0.63731897, 0.32023084, 0.41960785)
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D" unique_id=1249604621]
+position = Vector2(453, 78)
+shape = SubResource("RectangleShape2D_dbls1")
+debug_color = Color(0.13665724, 0.63731897, 0.32023084, 0.41960785)
+
+[node name="Player" parent="." unique_id=1612104625 instance=ExtResource("1_5kiuu")]
+position = Vector2(-22, 153)
