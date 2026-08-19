@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://v2rrvni2duxd" path="res://sprites/1 - Penguin/Waddling (16 x 16).png" id="3_7dhsy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pcnrt"]
-radius = 4.0
+radius = 7.0
 height = 20.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7dhsy"]
@@ -120,6 +120,7 @@ position = Vector2(36, 17)
 shape = SubResource("CapsuleShape2D_pcnrt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1731143561]
+z_index = 1
 position = Vector2(36, 17)
 scale = Vector2(1.0625, 1.25)
 sprite_frames = SubResource("SpriteFrames_pcnrt")
@@ -128,7 +129,7 @@ autoplay = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=710767437]
 limit_left = 0
-limit_top = 0
-limit_right = 452
-limit_bottom = 200
+limit_top = -2
+limit_right = 2000
+limit_bottom = 300
 position_smoothing_enabled = true
